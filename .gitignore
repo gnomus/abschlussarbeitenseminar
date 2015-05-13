@@ -10,3 +10,4 @@
 *.nav
 *.bbl
 *.blg
+.DS_Store
