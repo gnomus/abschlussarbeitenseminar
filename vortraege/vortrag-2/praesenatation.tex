@@ -1,0 +1,114 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[german]{babel}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{wasysym}
+\usepackage{textpos}
+\usepackage{epstopdf}
+\usepackage[pageofpages=von,
+            titlepagelogo=resource/logo]{beamerthemeUhh}
+\usepackage{beamercolorthemeuhh}
+
+\usepackage{tikz}
+\usepackage{setspace}
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+\logo{\includegraphics[height=0.125\paperheight]{resource/logo-fbi}}
+
+\setbeamertemplate{frametitle continuation}[from second][]
+\usefonttheme{professionalfonts}	
+
+%%%%%
+\newcommand{\myName}{Felix Favre}
+\newcommand{\myEmail}{1favre@informatik.uni-hamburg.de}
+\newcommand{\myTitle}{Validierung von dynamisch geladenem Javascript Codes in Webapplikationen}
+\newcommand{\myKeywords}{}
+\institute{Universität Hamburg -- Fachbereich Informatik -- Abschlussarbeiten Seminar}
+\date{\today}
+
+
+\title{\myTitle}
+\author{\myName}
+\keywords{\myKeywords}
+\subject{}
+
+\definecolor{uhh}{RGB}{226,0,26}
+
+\hypersetup{ 
+	pdftitle={\myTitle},
+	pdfauthor={\myName},
+	pdfkeywords={\myKeywords}, 
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	colorlinks=true,
+	linkbordercolor={1 1 1},
+	urlcolor=uhh,
+	anchorcolor=black,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black
+}
+
+\pdfcompresslevel=9
+\pdfimageresolution=72
+\pdfpkresolution=72
+
+\include{resource/maxFrameImage}
+
+\begin{document}
+
+\pdfbookmark[2]{Titelseite}{title}
+{
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth]{resource/uhh-bg.png}}
+    \frame{  
+        \titlepage
+    }
+}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item Git Repository aufsetzen (GitHub)
+    \item Redmine aufsetzen
+    \item Deckblatt designen
+    \item Gliederung schreiben
+    \item Literatur raussuchen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was passiert ist}
+  \begin{itemize}
+    \item Git Repository aufgesetzt (GitHub)
+    \item Redmine aufgesetzt
+    \item Deckblatt designed
+    \item Gliederung geschrieben
+    \item Literatur gesucht
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant ist}
+  \begin{itemize}
+    \item Motivation ausformulieren
+    \item Gliederung weiter verfeinern
+    \item Weiter Literatur suchen
+    \item Mehr schreiben
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
