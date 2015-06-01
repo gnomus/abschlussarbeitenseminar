@@ -1,5 +1,47 @@
 
 \section{Einleitung}
-asdfasdf
+
 \cite[S. 12ff.]{asdflol}
 \cite[sdflol]{stallman99:telepolis}
+
+
+
+In den letzten Jahren ist die Anzahl der dynamischen Webapplikationen mit einem hohen Anteil an Javascript stetig gewachsen \quelle.
+Allein die wohl bekannteste Javascript Biblothek jQuery \urlref wird heute auf über XX Prozent der Webseiten weltweit eingesetzt. \quelle
+
+Gerade hochdynamische Webanwendungen die mit Bibliotheken wie AngularJS \urlref entwickelt werden haben ein hohes Bedürfnis an gesicherter Kommunikation.
+Während die Web-Technologie sich mit großen Schritten weiterentwickelt ist die der gesicherten Kommunikation umso weniger vorangeschritten.
+Seit Jahren besteht die einzige Möglichkeit die Datenintegrität von Webseiten und Javascript zu gewährleisten in SSL Zertifikaten \iref.
+Dieser Monopolstellung sind sich die Zertifikatsanbieter natürlich bewusst und dementsprechend ist auch das Angebot.
+SSL-Zertifikate sind so teuer, dass es für vereinzelte Personen oder Studenten nahezu unmöglich ist sich die Sicherheit zu leisten.
+
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+- Aktuelle Webapps immer javascript lastiger\\
+- Sicherheit gegen Mitm Attacken nur durch ssl\\
+- ssl ist teuer \\
+- der einfach mann kann sich kein teures ssl zertifikat leisten \\
+- entwickeln einer lösung die ohne zentrale signing authority auskommt \\
+
+\subsection{Motivation}
+\tbd
+
+\subsection{Zielsetzung}
+
+In dieser Arbeit möchte ich untersuchen, welche Möglichkeiten existieren um die aktuelle Lage zu verbessern. Es soll unter der Annahme verschiedener Rahmenbedingungen schrittweise ein sicheres und unabhängiges Konzept zur Gewährleistung von Datenintigrität in Webapplikationen entwickelt und evaluiert werden.
+
+- betrachten der schwachstellen im aktuellen system\\
+- beurteilung des aktuellen standes von browser crypto \\
+- theoretisches entwickeln eines konzeptes für das kryptographische signieren von javascript code \\
+
+\subsection{Vorgehensweise und Aufbau der Arbeit}
+
+- betrachten verschiedener szenarien \\
+- von einfach zu schwer \\
+- zuerst mit zentraler signing db \\
+- dann mit dezentraler signing db \\
+- danach autark ohne signing db
+
+\newpage
