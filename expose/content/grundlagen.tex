@@ -7,13 +7,66 @@ Dem Leser soll genug Handwerkszeug mit auf den Weg gegeben werden um die folgend
 }
 
 \subsection{SSL/TLS}
-\tbd
+\todo[inline]{- grafik\\
+- historie, verbreitung\\
+- schwachstellen\\
+- CAs\\
+- lets encrypt
+}
+
 
 \subsection{Man-in-the-Middle Attack}
+\begin{tikzpicture}
+
+  \node[cloud, cloud puffs=12.7, cloud ignores aspect, minimum width=6cm, minimum height=4cm, align=center, draw] (cloud) at (5, 0) {Netzwerk};
+
+  \node[draw] (alice) at (0,0) {Alice};
+  \node[draw] (bob) at (10,0) {Bob};
+  \node[draw, fill=red!50] (eve) at (5,3) {Eve};
+
+  \draw[thick, ->] (alice) to [bend left=20] node [midway, fill=green!10, draw, thin, rounded corners=1mm] {Hallo Bob! } (bob) ;
+  \draw[thick, ->] (bob) to [bend left=20] node [midway, fill=green!10, draw, thin, rounded corners=1mm] {Hallo Alice! } (alice);
+
+\end{tikzpicture}
+
+\begin{tikzpicture}
+
+  \node[cloud, cloud puffs=12.7, cloud ignores aspect, minimum width=6cm, minimum height=4cm, align=center, draw, fill=red!25] (cloud) at (5, 0) {};
+
+  \node[draw] (alice) at (0,0) {Alice};
+  \node[draw] (bob) at (10,0) {Bob};
+  \node[draw, fill=red!50] (eve) at (5,0) {Eve};
+
+  \draw[thick, ->] (alice) to [bend left=30] node [midway, fill=green!10, draw, thin, rounded corners=1mm] {Hallo Bob! } (eve) ;
+  \draw[thick, ->] (eve) to [bend left=30] node [midway, fill=red!40, draw, thin, rounded corners=1mm] {Bob ist doof! } (bob) ;
+
+  \draw[thick, ->] (bob) to [bend left=40] node [midway, fill=green!10, draw, thin, rounded corners=1mm] {Hey, das ist gemein! } (eve);
+  \draw[thick, ->] (eve) to [bend left=40] node [midway, fill=red!40, draw, thin, rounded corners=1mm] {Hallo Alice! } (alice);
+
+\end{tikzpicture}
+
+
+\todo[inline]{- grafik\\
+- erläuterung anhand von beispielen
+}
+
+\subsection{Unterschied Verifikation und Validierung}
 \tbd
 
-\subsection{Crypto foo bar}
-\tbd
+\subsection{Proof-Carrying Code}
+\todo[inline]{- was ist pcc\\
+- wo wird er eingesetzt
+- vorteile/nachteile
+}
 
-\subsection{Browser Crypto}
-\tbd
+
+\subsection{Kryptographische Signaturmethoden}
+\todo[inline]{- pgp\\
+- ???
+}
+
+\subsection{Kryptographische APIs in aktuellen Webbrowsern}
+\todo[inline]{- chrome, firefox, safari, internet explorer\\
+- aktueller stand der apis
+- was fehlt?
+}
