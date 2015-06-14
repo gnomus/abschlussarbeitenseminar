@@ -13,7 +13,18 @@ Dem Leser soll genug Handwerkszeug mit auf den Weg gegeben werden um die folgend
 }
 
 
-\subsection{Man-in-the-Middle Attack}
+\subsection{Man-in-the-Middle Angriff}
+
+Der Man-in-the-Middle Angriff ist eine Attacke auf die Kommunikation zweier oder mehrerer Teilnehmer eines Computernetzwerkes. Der Angriff basiert auf der Kompromittierung der Netzwerkinfrastruktur zwischen den Kommunikationspartnern.\ifref{fig:mitm-safe}
+
+Hierbei reicht es bereits für den Angreifer Kontrolle über einen einzelnen Netzwerkknoten zu erlangen über den die Kommunikation läuft.
+Hat der Angreifer einen solchen Knoten übernommen ist er in der Lage jede eingehende Nachricht mitzulesen (passiver MitM) und ggf. zu verändern (aktiver MitM).
+
+Dies kann dazu führen, dass geheime Daten (z.B. Anmelde-Informationen) mitgeschnitten werden oder dem Opfer kompromittierte  Software untergeschoben wird.
+
+Als Absicherung gegen passive MitM Angriffe wird überlicherweise Verschlüsselung eingesetzt. Zwar ist Verschlüsselung auch ein Mittel gegen aktive MitM Angriffe, besser jedoch ist hier die Signierung von Nachrichten.
+
+
 \begin{figure}[ht]
   \centering
   \begin{tikzpicture}
