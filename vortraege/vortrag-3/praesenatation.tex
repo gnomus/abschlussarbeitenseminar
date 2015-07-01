@@ -84,72 +84,6 @@
 
 \begin{frame}{Was geplant war}
   \begin{itemize}
-    \item Git Repository aufsetzen (GitHub)
-    \item Redmine aufsetzen
-    \item Deckblatt designen
-    \item Gliederung schreiben
-    \item Literatur raussuchen
-    \item Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant war}
-  \begin{itemize}
-    \item \sout{Git Repository aufsetzen (GitHub)}
-    \item Redmine aufsetzen
-    \item Deckblatt designen
-    \item Gliederung schreiben
-    \item Literatur raussuchen
-    \item Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant war}
-  \begin{itemize}
-    \item \sout{Git Repository aufsetzen (GitHub)}
-    \item \sout{Redmine aufsetzen}
-    \item Deckblatt designen
-    \item Gliederung schreiben
-    \item Literatur raussuchen
-    \item Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant war}
-  \begin{itemize}
-    \item \sout{Git Repository aufsetzen (GitHub)}
-    \item \sout{Redmine aufsetzen}
-    \item \sout{Deckblatt designen}
-    \item Gliederung schreiben
-    \item Literatur raussuchen
-    \item Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant war}
-  \begin{itemize}
-    \item \sout{Git Repository aufsetzen (GitHub)}
-    \item \sout{Redmine aufsetzen}
-    \item \sout{Deckblatt designen}
-    \item \sout{Gliederung schreiben}
-    \item Literatur raussuchen
-    \item Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant war}
-  \begin{itemize}
-    \item \sout{Git Repository aufsetzen (GitHub)}
-    \item \sout{Redmine aufsetzen}
-    \item \sout{Deckblatt designen}
-    \item \sout{Gliederung schreiben}
-    \item [WIP] Literatur raussuchen
-    \item [WIP] Einleitung und Motivation schreiben
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Was geplant ist}
-  \begin{itemize}
     \item Motivation und Einleitung ausformulieren
     \item Gliederung weiter verfeinern
     \item Mehr Literatur raussuchen
@@ -157,11 +91,51 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Wozu ich gekommen bin}
+\end{frame}
+
 \begin{frame}{Zum Inhalt der Arbeit}
   \begin{itemize}
-    \item Thema ist doch nicht so einfach wie ich mir das vorgestellt habe
-    \item Arbeite aktuell noch an einer Lösung dieses Problems
-    \item Nächstes mal mehr dazu
+    \item Rahmenbedingung: Keine Verschlüsselte Verbingung
+    \item Wie stelle ich sicher, dass eine Datei so beim Empfänger ankommt, wie ich sie verschickt habe?
+    \item Mehrere Ideen
+    \item Ideen in der Arbeit betrachten und evaluieren
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zum Inhalt der Arbeit - Idee 1}
+  \begin{itemize}
+    \item Server schickt eine Hashsumme des Files mit
+    \item Anfällig für Man in the Middle
+  \end{itemize}
+  \begin{itemize}
+    \item Server liefert File unter der Hashsumme aus
+    \item \texttt{<script src="{}http://example.com/js/ d8e8fca2dc0f896fd7cb4cb0031ba249"{}></script>}
+    \item Anfällig für Man in the Middle
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zum Inhalt der Arbeit - Idee 2}
+  \begin{itemize}
+    \item Server signiert Files mit privatem Schlüssel
+    \item Öffentlicher Schlüssel wird mit dem File ausgeliefert
+    \item Man in the Middle muss bloß beides fälschen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zum Inhalt der Arbeit - Idee 3}
+  \begin{itemize}
+    \item Server signiert Files mit privatem Schlüssel
+    \item Öffentlichen Schlüssel auf vertrauenswürdigem Server ablegen
+    \item Selbe Problematik wie bei SSL
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zum Inhalt der Arbeit - Idee 4}
+  \begin{itemize}
+    \item Server signiert Files mit privatem Schlüssel
+    \item Web-of-Trust ähnliches Konstrukt, wie bei PGP
+    \item Eigentlich ganz cool, nutzt dann nur wieder keiner :(
   \end{itemize}
 \end{frame}
 
