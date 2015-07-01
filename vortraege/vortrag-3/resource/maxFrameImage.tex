@@ -1,0 +1,13 @@
+\newcommand{\maxFrameImage}[1]{
+\begingroup
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}[plain]
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]
+{#1}
+\end{center}
+\end{changemargin}
+\end{frame}
+\endgroup
+}

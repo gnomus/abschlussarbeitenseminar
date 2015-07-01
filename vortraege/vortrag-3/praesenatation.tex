@@ -1,0 +1,168 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[german]{babel}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{wasysym}
+\usepackage{textpos}
+\usepackage{ulem}
+\usepackage{epstopdf}
+\usepackage[pageofpages=von,
+            titlepagelogo=resource/logo]{beamerthemeUhh}
+\usepackage{beamercolorthemeuhh}
+
+\usepackage{tikz}
+\usepackage{setspace}
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+\logo{\includegraphics[height=0.125\paperheight]{resource/logo-fbi}}
+
+\setbeamertemplate{frametitle continuation}[from second][]
+\usefonttheme{professionalfonts}
+
+%%%%%
+\newcommand{\myName}{Felix Favre}
+\newcommand{\myEmail}{1favre@informatik.uni-hamburg.de}
+\newcommand{\myTitle}{Validierung von dynamisch geladenem Javascript Code in Webapplikationen}
+\newcommand{\myKeywords}{}
+\institute{Universität Hamburg -- Fachbereich Informatik -- Abschlussarbeiten Seminar}
+\date{\today}
+
+
+\title{\myTitle}
+\author{\myName}
+\keywords{\myKeywords}
+\subject{}
+
+\definecolor{uhh}{RGB}{226,0,26}
+
+\hypersetup{
+	pdftitle={\myTitle},
+	pdfauthor={\myName},
+	pdfkeywords={\myKeywords},
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	colorlinks=true,
+	linkbordercolor={1 1 1},
+	urlcolor=uhh,
+	anchorcolor=black,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black
+}
+
+\pdfcompresslevel=9
+\pdfimageresolution=72
+\pdfpkresolution=72
+
+\include{resource/maxFrameImage}
+
+\begin{document}
+
+\pdfbookmark[2]{Titelseite}{title}
+{
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth]{resource/uhh-bg.png}}
+    \frame{
+        \titlepage
+    }
+}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item Git Repository aufsetzen (GitHub)
+    \item Redmine aufsetzen
+    \item Deckblatt designen
+    \item Gliederung schreiben
+    \item Literatur raussuchen
+    \item Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item \sout{Git Repository aufsetzen (GitHub)}
+    \item Redmine aufsetzen
+    \item Deckblatt designen
+    \item Gliederung schreiben
+    \item Literatur raussuchen
+    \item Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item \sout{Git Repository aufsetzen (GitHub)}
+    \item \sout{Redmine aufsetzen}
+    \item Deckblatt designen
+    \item Gliederung schreiben
+    \item Literatur raussuchen
+    \item Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item \sout{Git Repository aufsetzen (GitHub)}
+    \item \sout{Redmine aufsetzen}
+    \item \sout{Deckblatt designen}
+    \item Gliederung schreiben
+    \item Literatur raussuchen
+    \item Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item \sout{Git Repository aufsetzen (GitHub)}
+    \item \sout{Redmine aufsetzen}
+    \item \sout{Deckblatt designen}
+    \item \sout{Gliederung schreiben}
+    \item Literatur raussuchen
+    \item Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant war}
+  \begin{itemize}
+    \item \sout{Git Repository aufsetzen (GitHub)}
+    \item \sout{Redmine aufsetzen}
+    \item \sout{Deckblatt designen}
+    \item \sout{Gliederung schreiben}
+    \item [WIP] Literatur raussuchen
+    \item [WIP] Einleitung und Motivation schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Was geplant ist}
+  \begin{itemize}
+    \item Motivation und Einleitung ausformulieren
+    \item Gliederung weiter verfeinern
+    \item Mehr Literatur raussuchen
+    \item Weiter schreiben
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zum Inhalt der Arbeit}
+  \begin{itemize}
+    \item Thema ist doch nicht so einfach wie ich mir das vorgestellt habe
+    \item Arbeite aktuell noch an einer Lösung dieses Problems
+    \item Nächstes mal mehr dazu
+  \end{itemize}
+\end{frame}
+
+\end{document}
